@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/setup-node@v3 # Updated setup-node action
+      - uses: actions/setup-node@v2 # Update setup-node action to version 2
         with:
-          node-version: '14' # Set the desired Node.js version
-      - uses: actions/checkout@v3
+          node-version: '16' # Set the desired Node.js version to 16 or 20
+      - uses: actions/checkout@v2 # Update checkout action to version 2
         with:
           submodules: true
           lfs: false
